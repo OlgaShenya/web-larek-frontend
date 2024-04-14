@@ -180,8 +180,7 @@ interface IAppState {
 - `clearBasket(): void`
 - `clearOrder(): void`
 - `toggleInBasket(item: IProduct): void`
-- `setOrderField(field: keyof IOrderForm, value: PaymentMethod & string): void`
-- `setContactField(field: keyof IContactsForm,value: string): void`
+- `setField(field: keyof IOrderForm | keyof IContactsForm, value: PaymentMethod & string) : void`
 - `validateOrder(): void`
 - `validateContact(): void`
 
